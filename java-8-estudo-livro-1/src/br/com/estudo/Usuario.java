@@ -6,6 +6,15 @@ class Usuario {
 	private int pontos;
 	private boolean moderador;
 
+	public Usuario() {
+		super();
+	}
+
+	public Usuario(String nome) {
+		super();
+		this.nome = nome;
+	}
+
 	public Usuario(String nome, int pontos) {
 		super();
 		this.nome = nome;
@@ -33,14 +42,9 @@ class Usuario {
 		return moderador;
 	}
 
-}
-
-public class Capitulo2 {
-	
-	public static void main(String[] args) {
-		
-		
-		
+	@Override
+	public String toString() {
+		return "Usuario [nome=" + nome + ", pontos=" + pontos + ", moderador=" + moderador + "]";
 	}
-	
+
 }
